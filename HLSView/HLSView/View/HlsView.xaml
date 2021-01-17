@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:HLSView.ViewModel"
+             mc:Ignorable="d"
+             x:Class="HLSView.View.HlsView">
+
+    <ContentPage.Resources>
+        <local:HLSColorViewModel x:Key="viewModel" MyColor="Red"/>
+
+        <Style TargetType="Slider">
+            <Setter Property="VerticalOptions" Value="StartAndExpand"/>
+            <Setter Property="BackgroundColor" Value="Gray"/>
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="Medium"/>
+        </Style>
+
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+        <!--Set binding context for grid to staticResourse viewModel-->
+        <Grid BindingContext="{StaticResource viewModel}">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+
+            <BoxView Color="{Binding MyColor}" Grid.Row="0" />
+
+
+            <StackLayout Grid.Row="1" Margin="10">
+                <!--Bind Color property toName-->
+                <Label Text="{Binding Name}" 
+                HorizontalOptions="Center" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Hue"/>
+                    <!--Bind Value property to HueValue-->
+                    <Label Text="{Binding HueValue}"/>
+                </StackLayout>
+
+                <!--Bind Value property to HueValue-->
+                <Slider Value="{Binding Hue}"/>
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Saturation"/>
+                    <!--Bind Value property to Luminosity-->
+                    <Label Text="{Binding SaturationValue}"/>
+                </StackLayout>
+
+                <!--Bind Value property to Saturation-->
+                <Slider Value="{Binding Saturation}"/>
+
+
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="Luminosity"/>
+                    <!--Bind Value property to Luminosity-->
+                    <Label Text="{Binding LuminosityValue}"/>
+                </StackLayout>
+
+                <!--Bind Value property to Luminosity-->
+                <Slider Value="{Binding Luminosity}"/>
+
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

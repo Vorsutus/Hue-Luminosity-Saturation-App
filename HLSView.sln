@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLSView.Android", "HLSView\HLSView.Android\HLSView.Android.csproj", "{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HLSView", "HLSView\HLSView\HLSView.csproj", "{8569A18A-42E2-4BEA-940D-7FBBD56BD486}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCECD93F-5A52-46A6-AC93-A6867E3CEE8D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{8569A18A-42E2-4BEA-940D-7FBBD56BD486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8569A18A-42E2-4BEA-940D-7FBBD56BD486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8569A18A-42E2-4BEA-940D-7FBBD56BD486}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{8569A18A-42E2-4BEA-940D-7FBBD56BD486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8569A18A-42E2-4BEA-940D-7FBBD56BD486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8569A18A-42E2-4BEA-940D-7FBBD56BD486}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {21757FE6-A792-41F6-A2BA-653D82D73A5B}
+	EndGlobalSection
+EndGlobal
